@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(65, 62, 62);
+            margin: 0px;
+        }
+        header{
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+        }
+        nav{
+            background-color: rgb(83, 82, 82);
+            padding: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.473);
+        }
+        nav > a{
+            margin-right: 30px;
+            color: white;
+            font-weight: bold;
+
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.479);
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: darkgray;
+        }
+        footer{
+            background-color: black;
+            margin: 0px;
+        }
+        footer > p {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            padding: 1px;
+        }
+        div#bola{
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            Notícias
+            Tecnologia
+            Clima
+        </section>
+        <section>
+            <article>
+                <h2>Esporte</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit incidunt, nulla sunt exercitationem omnis neque quas ratione, obcaecati maxime quos quaerat ullam. Dolores ipsa eveniet excepturi praesentium rem nesciunt alias?</p>
+                <aside>
+                    <p>Artigo escrito por Lucas Rodrigues</p>
+                </aside>
+            </article>
+        </section>
+        <section>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer><p>Desenvolvido por Lucas Rodrigues</p></footer>
+    <div id="bola"></div>
+</body>
+</html>

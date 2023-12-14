@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* { /* configurações globais CSS */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #818274, #506266);
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #394647d3;
+    padding: 10px;
+    margin: auto;
+} 
+
+h1 {
+    color: #8fac2a;
+    text-align: center;
+    text-shadow: 1px 1px 2px #404d13b4;
+}
+
+h2 {
+    color: #10454F;
+}
+
+p {
+    text-align: justify;
+}

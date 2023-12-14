@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Teste esse site em varios dipositivos ou mude o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto flexivel">
+    </picture>
+
+    <h1>Reproduzindo sons no site</h1>
+    <h2>Teste 1</h2>
+    <audio src="midia/city-walk.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG -->
+    <h2>Teste 2</h2>
+    <audio preload="metadata" controls loop>
+        <source src="midia/city-walk.mp3" type="audio/mpeg">
+        <source src="midia/city-walk.ogg" type="audio/ogg">
+        <source src="midia/city-walk.wav" type="audio/audio">
+        <p>Seu navegador não suporta áudio <a href="midia/city-walk.mp3" download="city-walk.mp3" type="audio/mpeg"></a></p>
+    </audio>
+
+    
+    
+</body>
+</html>

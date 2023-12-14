@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Levels</title>
+    <style>
+        h1{
+            /*exemplo de shorthands -  border e outline
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            outline-width: 20px;
+            outline-style: dashed;
+            outline-color: blue;
+            */
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: 10px solid red;
+            outline: 20px dashed blue;
+
+            /*shorthands - padding e margin
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 50px;
+            margin-right: 70px;
+            margin-bottom: 50px;
+            margin-left: 70px;
+            */
+            padding: 10px 10px 10px 10px;
+            margin: 50px 70px;
+        }
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelos de Box</h1>
+    <p>o parágrafo tbm é um box-level, mas <a href="#">o link é um inline-level</a>.</p>
+</body>
+</html>
