@@ -8,8 +8,9 @@
         table {
             border-collapse: collapse;
             font-family: Arial, Helvetica, sans-serif;
-            width: 800px;
+            width: 500px;
             margin: auto;
+            position: relative;
         }
 
         caption {
@@ -18,9 +19,20 @@
             padding: 5px;
         }
 
-        th {
+        thead, tfoot {
             background-color: rgb(53, 52, 52);
             color: white;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(53, 52, 52);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
         }
 
         th, td {
@@ -29,152 +41,154 @@
             text-align: center;
         }
 
+        .num {
+            text-align: right;
+        }
+
     </style>
 </head>
 <body>
     <h1>Usando tabelas grandes</h1>
 
     <table>
-        <caption>O Mar da Sobrevivência: Saga dos Supernovas</caption>
+        <caption>População das Unidades Federativas</caption> 
         <thead>
             <tr>
-                <th scope="col">
-                    Saga East Blue
-                </th>
-                <th scope="col">
-                    Saga Alabasta
-                </th>
-                <th scope="col">
-                    Saga Skypiea
-                </th>
-                <th scope="col">
-                    Saga Water 7
-                </th>
-                <th scope="col">
-                    Saga Thriller Bark
-                </th>
-                <th scope="col">
-                    Saga Marineford
-                </th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
-                <td>
-                    Arco Romance Dawn (Capítulos 1 ao 7, Volume 1)
-                </td>
-                <td>
-                    Arco Reverse Mountain (Capítulos 101 ao 105, Volume 12)
-                </td>
-                <td>
-                    Arco Jaya (Capítulos 218 ao 236, Volumes 24 e 25)
-                </td>
-                <td>
-                    Arco Long Ring Long Land (Capítulos 303 ao 321, Volumes 32 ao 34)
-                </td>
-                <td>
-                    Arco Thriller Bark (Capítulos 442 ao 489, Volumes 46 ao 50)
-                </td>
-                <td>
-                    Arco Arquipélago de Sabaody (Capítulos 490 ao 513, Volumes 50 ao 53)
-                </td>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
             </tr>
             <tr>
-                <td>
-                    Arco Orange Town
-                    (Capítulos 8 ao 21, Volumes 1 ao 3)
-                </td>
-                <td>
-                    Arco Whisky Peak
-                    (Capítulos 106 ao 114, Volumes 12 e 13)
-                </td>td>
-                <td>
-                    Arco Skypiea
-(Capítulos 237 ao 302, Volumes 26 ao 32)
-                </td>
-                <td>
-                    Arco Water 7
-(Capítulos 322 ao 374, Volumes 34 ao 39)
-                </td>
-                <td></td>
-                <td>Arco Amazon Lily
-                    (Capítulos 514 ao 523, Volumes 53 e 54)
-                </td>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
             </tr>
             <tr>
-                <td>
-                    Arco Vila Syrup
-(Capítulos 22 ao 41, Volumes 3 ao 5)
-                </td>
-                <td>
-                    Arco Little Garden
-(Capítulos 115 ao 129, Volumes 13 ao 15)
-                </td>
-                <td>
-
-                </td>
-                <td>
-                    Arco Enies Lobby
-(Capítulos 375 ao 430, Volumes 39 ao 44)
-                </td>
-                <td></td>
-                <td>
-                    Arco Impel Down
-                    (Capítulos 524 ao 548, Volumes 54 ao 56) 
-                </td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
             </tr>
             <tr>
-                <td>
-                        Arco Baratie
-(Capítulos 42 ao 68, Volumes 5 ao 8)
-                </td>
-                <td>
-                        Arco Ilha Drum
-(Capítulos 130 ao 154, Volumes 15 ao 17)	
-                </td>
-                <td></td>
-                <td>
-                        Arco Pós-Enies Lobby
-(Capítulos 431 ao 441, Volumes 45 e 46)
-                </td>
-                <td></td>
-                <td>
-                        Arco Marineford
-                        (Capítulos 549 ao 580, Volumes 56 ao 59) 
-                </td>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
             </tr>
             <tr>
-               <td>
-                Arco Arlong Park
-(Capítulos 69 ao 95, Volumes 8 ao 11)
-               </td>
-               <td>
-                Arco Alabasta
-(Capítulos 155 ao 217, Volumes 17 ao 24)
-               </td> 
-               <td></td>
-               <td></td>
-               <td></td>
-               <td>
-                Arco Pós-Guerra
-(Capítulos 581 ao 597, Volumes 59 ao 61)
-               </td>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
             </tr>
             <tr>
-                <td>
-                    Arco Loguetown
-(Capítulos 96 ao 100, Volumes 11 e 12)
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
             </tr>
-        </tbody>
-        <tfoot>
-
-        </tfoot>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.075.181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.018.354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.144.597</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.018.650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.018.127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.506.853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.484.466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.337.357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.273.227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.015.268</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.778.986</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.298.696</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.777.225</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.572.866</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">881.935</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">845.731</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">605.761</td>
+            </tr>
+        </tbody>      
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque laudantium, autem minima, dolore alias illo nam nesciunt ipsum harum iure impedit sed cum ducimus. Debitis ullam excepturi obcaecati quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad laborum, soluta provident atque porro ipsa consectetur tempore rerum nobis aut a doloremque aliquam voluptatibus doloribus molestias laboriosam ipsam perspiciatis sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error facere expedita consequuntur ipsum. Inventore necessitatibus quas amet neque, ex distinctio repudiandae, voluptatum ad similique, iste asperiores incidunt cupiditate odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi modi sed porro, labore cumque, voluptatem et eos debitis recusandae necessitatibus quisquam eius quos quis, tenetur id rem harum. Nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, beatae! Vitae quae, ad dolorum illum doloremque similique, magnam eos necessitatibus tempora eveniet voluptas ipsum distinctio aliquid placeat in ipsa voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ad quis quos soluta eos totam ullam quaerat, fugit, eaque, deserunt aperiam excepturi et esse quod veniam nam ipsum? Quaerat, harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo tempora fuga aperiam numquam rerum illo molestiae at reprehenderit. Non omnis pariatur impedit nulla ut fugit in asperiores placeat? Labore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sequi minus repellendus sit inventore maxime nostrum maiores, similique quos ratione provident aliquid culpa libero reiciendis praesentium. Quibusdam nesciunt perspiciatis reprehenderit?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque laudantium, autem minima, dolore alias illo nam nesciunt ipsum harum iure impedit sed cum ducimus. Debitis ullam excepturi obcaecati quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad laborum, soluta provident atque porro ipsa consectetur tempore rerum nobis aut a doloremque aliquam voluptatibus doloribus molestias laboriosam ipsam perspiciatis sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error facere expedita consequuntur ipsum. Inventore necessitatibus quas amet neque, ex distinctio repudiandae, voluptatum ad similique, iste asperiores incidunt cupiditate odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi modi sed porro, labore cumque, voluptatem et eos debitis recusandae necessitatibus quisquam eius quos quis, tenetur id rem harum. Nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, beatae! Vitae quae, ad dolorum illum doloremque similique, magnam eos necessitatibus tempora eveniet voluptas ipsum distinctio aliquid placeat in ipsa voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ad quis quos soluta eos totam ullam quaerat, fugit, eaque, deserunt aperiam excepturi et esse quod veniam nam ipsum? Quaerat, harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo tempora fuga aperiam numquam rerum illo molestiae at reprehenderit. Non omnis pariatur impedit nulla ut fugit in asperiores placeat? Labore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sequi minus repellendus sit inventore maxime nostrum maiores, similique quos ratione provident aliquid culpa libero reiciendis praesentium. Quibusdam nesciunt perspiciatis reprehenderit?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque laudantium, autem minima, dolore alias illo nam nesciunt ipsum harum iure impedit sed cum ducimus. Debitis ullam excepturi obcaecati quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad laborum, soluta provident atque porro ipsa consectetur tempore rerum nobis aut a doloremque aliquam voluptatibus doloribus molestias laboriosam ipsam perspiciatis sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error facere expedita consequuntur ipsum. Inventore necessitatibus quas amet neque, ex distinctio repudiandae, voluptatum ad similique, iste asperiores incidunt cupiditate odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi modi sed porro, labore cumque, voluptatem et eos debitis recusandae necessitatibus quisquam eius quos quis, tenetur id rem harum. Nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, beatae! Vitae quae, ad dolorum illum doloremque similique, magnam eos necessitatibus tempora eveniet voluptas ipsum distinctio aliquid placeat in ipsa voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ad quis quos soluta eos totam ullam quaerat, fugit, eaque, deserunt aperiam excepturi et esse quod veniam nam ipsum? Quaerat, harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo tempora fuga aperiam numquam rerum illo molestiae at reprehenderit. Non omnis pariatur impedit nulla ut fugit in asperiores placeat? Labore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sequi minus repellendus sit inventore maxime nostrum maiores, similique quos ratione provident aliquid culpa libero reiciendis praesentium. Quibusdam nesciunt perspiciatis reprehenderit?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque laudantium, autem minima, dolore alias illo nam nesciunt ipsum harum iure impedit sed cum ducimus. Debitis ullam excepturi obcaecati quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad laborum, soluta provident atque porro ipsa consectetur tempore rerum nobis aut a doloremque aliquam voluptatibus doloribus molestias laboriosam ipsam perspiciatis sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error facere expedita consequuntur ipsum. Inventore necessitatibus quas amet neque, ex distinctio repudiandae, voluptatum ad similique, iste asperiores incidunt cupiditate odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi modi sed porro, labore cumque, voluptatem et eos debitis recusandae necessitatibus quisquam eius quos quis, tenetur id rem harum. Nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, beatae! Vitae quae, ad dolorum illum doloremque similique, magnam eos necessitatibus tempora eveniet voluptas ipsum distinctio aliquid placeat in ipsa voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ad quis quos soluta eos totam ullam quaerat, fugit, eaque, deserunt aperiam excepturi et esse quod veniam nam ipsum? Quaerat, harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo tempora fuga aperiam numquam rerum illo molestiae at reprehenderit. Non omnis pariatur impedit nulla ut fugit in asperiores placeat? Labore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sequi minus repellendus sit inventore maxime nostrum maiores, similique quos ratione provident aliquid culpa libero reiciendis praesentium. Quibusdam nesciunt perspiciatis reprehenderit?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque laudantium, autem minima, dolore alias illo nam nesciunt ipsum harum iure impedit sed cum ducimus. Debitis ullam excepturi obcaecati quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad laborum, soluta provident atque porro ipsa consectetur tempore rerum nobis aut a doloremque aliquam voluptatibus doloribus molestias laboriosam ipsam perspiciatis sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis error facere expedita consequuntur ipsum. Inventore necessitatibus quas amet neque, ex distinctio repudiandae, voluptatum ad similique, iste asperiores incidunt cupiditate odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit commodi modi sed porro, labore cumque, voluptatem et eos debitis recusandae necessitatibus quisquam eius quos quis, tenetur id rem harum. Nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, beatae! Vitae quae, ad dolorum illum doloremque similique, magnam eos necessitatibus tempora eveniet voluptas ipsum distinctio aliquid placeat in ipsa voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ad quis quos soluta eos totam ullam quaerat, fugit, eaque, deserunt aperiam excepturi et esse quod veniam nam ipsum? Quaerat, harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo tempora fuga aperiam numquam rerum illo molestiae at reprehenderit. Non omnis pariatur impedit nulla ut fugit in asperiores placeat? Labore? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sequi minus repellendus sit inventore maxime nostrum maiores, similique quos ratione provident aliquid culpa libero reiciendis praesentium. Quibusdam nesciunt perspiciatis reprehenderit?
+    </p>
 </body>
 </html>
