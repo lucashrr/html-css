@@ -4,4 +4,9 @@
     section#redes-sociais {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
+
+    section#redes-sociais img {
+        margin: 10px;
+        margin-right: 10px;
+    }
 }
