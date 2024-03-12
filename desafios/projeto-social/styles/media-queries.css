@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    section#redes-sociais {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
