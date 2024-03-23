@@ -1,0 +1,1 @@
+Aprenda PHP para saber configurar esse arquivo
